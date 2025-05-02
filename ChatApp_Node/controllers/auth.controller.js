@@ -95,6 +95,7 @@ export const logout = (req, res) => {
 };
 
 export const updateProfile = async (req, res) => {
+    // use cloudinary
     const { profilePic } = req.body;
     const userId = req.user._id; // Get the user ID from the request object
     try {
